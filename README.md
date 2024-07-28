@@ -16,3 +16,9 @@
 ```bash
 ./compile.sh
 ```
+
+### Run
+
+```bash
+./bin/Starthinker
+```
