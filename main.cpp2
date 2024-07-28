@@ -1,6 +1,15 @@
 //  "A better C than C" ... ?
 //
+#include <torch/torch.h>
+
+#include "main.h"
+
+// int a = 5;
+
 main: () -> int = {
+    tensor: torch::Tensor = torch::rand(:std::vector<int64_t> = (1, 2));
+    std::cout << tensor.sizes() << std::endl;
+
     s: std::string = "Fred";
     myfile := fopen("xyzzy", "w");
     myfile.fprintf( "Hello %s with UFCS!\n", s.c_str() );

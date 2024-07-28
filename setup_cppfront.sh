@@ -2,8 +2,8 @@
 
 set -e
 
-mkdir -p ./cppfront/target/
-cd cppfront
+mkdir -p ./ext/cppfront/target/
+cd ./ext/cppfront
 git clone --recursive https://github.com/modern-cmake/cppfront
 cd cppfront
 git checkout 581f1aa
