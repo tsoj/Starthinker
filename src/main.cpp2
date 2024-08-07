@@ -1,14 +1,21 @@
 //  "A better C than C" ... ?
 //
-#include <torch/torch.h>
+
+// #include <torch/torch.h>
 
 #include "main.h"
+#include "types.h"
 
 // int a = 5;
 
 main: () -> int = {
-    tensor: torch::Tensor = torch::rand(:std::vector<int64_t> = (1, 2));
-    std::cout << tensor.sizes() << std::endl;
+    // tensor: torch::Tensor = torch::rand(:std::vector<int64_t> = (1, 2));
+    // std::cout << tensor.sizes() << std::endl;
+
+    // square: const = Square::a1;
+    square: = Square::from_string("h8");
+    std::cout << (:i16 = 3) as int << std::endl;
+    std::cout << square.to_string() << std::endl;
 
     s: std::string = "Fred";
     myfile := fopen("xyzzy", "w");
