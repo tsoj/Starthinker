@@ -29,7 +29,7 @@ Square: @enum<u8> type = {
 }
 
 
-EnumArray: <from: _, to: _, T: type> type requires int is char  = {
+EnumArray: <from: _, to: _, T: type> type = {
     i: T = from;
     j: T = to;
 }
